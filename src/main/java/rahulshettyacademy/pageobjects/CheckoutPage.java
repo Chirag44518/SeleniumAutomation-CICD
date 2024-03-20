@@ -41,7 +41,7 @@ public class CheckoutPage extends AbstractComponent {
 
 	public ConfirmationPage submitOrder() {
 		JavascriptExecutor js = (JavascriptExecutor) driver;
-		js.executeScript("window.scrollBy(0,2000)");
+		js.executeScript("window.scrollBy(0,2200)");
 		waitForWebElementToBeClickable(submit);
 		submit.click();
 		return new ConfirmationPage(driver);
